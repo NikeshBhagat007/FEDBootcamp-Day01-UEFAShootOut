@@ -2,3 +2,82 @@
 margin: 0;
 padding: 0;
 }
+
+body
+{
+    background: #553D67;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.container
+{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 700px;
+    padding: 50px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.container > .row
+{
+    width: 100%;
+    justify-content: space-evenly;
+}
+.row
+{
+    display: flex;
+}
+.col
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name
+{
+    margin: 20px 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: Bold;
+    color: rgb(63, 55, 55);
+}
+
+.round-shots
+{
+    font-size: xx-large;
+}
+.round-shots > span{
+    margin: 0 5px;
+}
+.score
+{
+    font-size: xx-large;
+}
+
+.score > span{
+    margin: 0 5px;
+}
+
+#btnShoot
+{
+    border: none;
+    border-radius: 25px;
+    font-size: large;
+    width: 300px;
+    background: radial-gradient(red,yellow);
+    padding: 10px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    outline:none;
+}
+/* .profile-icon 
+{
+ 
+} */
