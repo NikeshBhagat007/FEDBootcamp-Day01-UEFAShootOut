@@ -6,12 +6,13 @@
     <title>UEFA-Penaulty ShootOut</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
 </head>
 <body>
-   <div class="container">
+   <div class="container1">
        <div class="row">
            <div class="col">
-               <img class="profile-icon" src="assets/RealMadridFC.jpg" alt="" width="250px" height="280px">
+               <img class="profile-icon" src="assets/RealMadridFC.jpg" alt="" width="200px" height="200px">
                <span class="name" id="team-1-name">Real Madrid </span>
 
                <div class="row round-shots" id="team-1-round-shots" >
@@ -26,16 +27,16 @@
 
            <div class="col">
                <div class="row score">
-                  <span class="col">0</span>
-                  <span class="col">-</span>
-                  <span class="col">0</span>
+                  <span id="team-1-goals"></span>
+                  <span>-</span>
+                  <span id="team-2-goals"></span>
                </div>
            </div>
 
            <div class="col">
-            <img class="profile-icon"   src="assets/HescaFC.jpg" alt="" width="250px" height="280px" >
+            <img class="profile-icon"   src="assets/HescaFC.jpg" alt="" width="200px" height="200px" >
             <span class="name" id="team-2-name">Huesca </span>
-                <div class="row round-shots" id="team-1-round-shots">
+                <div class="row round-shots" id="team-2-round-shots">
                     <span class="col">-</span>
                     <span class="col">-</span>
                     <span class="col">-</span>
@@ -46,9 +47,95 @@
      </div>
      <div class="row">
          <div >
-            <button id="btnShoot">ShootOut</button>
+            <button id="btnShootA"></button>
          </div>
        </div>
  </div>
+
+ <div class="container2">
+    <div class="row">
+        <div class="col">
+            <img class="profile-icon" src="assets/FCBayernMunich.jpg" alt="" width="200px" height="200px">
+            <span class="name" id="team-1-name">Bayern Munich </span>
+
+            <div class="row round-shots" id="team-1-round-shots" >
+                <span class="col">-</span>
+                <span class="col">-</span>
+                <span class="col">-</span>
+                <span class="col">-</span>
+                <span class="col">-</span>
+             </div>
+
+        </div>
+
+        <div class="col">
+            <div class="row score">
+               <span id="team-1-goals"></span>
+               <span>-</span>
+               <span id="team-2-goals"></span>
+            </div>
+        </div>
+
+        <div class="col">
+         <img class="profile-icon"   src="assets/HescaFC.jpg" alt="" width="200px" height="200px" >
+         <span class="name" id="team-2-name">Huesca </span>
+             <div class="row round-shots" id="team-2-round-shots">
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                 <span class="col">-</span>            
+             </div>
+        </div>
+  </div>
+  <div class="row">
+      <div >
+         <button id="btnShootB"></button>
+      </div>
+    </div>
+</div>
+<div class="container3">
+    <div class="row">
+        <div class="col">
+            <img class="profile-icon" src="assets/FCBayernMunich.jpg" alt="" width="200px" height="200px">
+            <span class="name" id="team-1-name">Bayern Munich </span>
+
+            <div class="row round-shots" id="team-1-round-shots" >
+                <span class="col">-</span>
+                <span class="col">-</span>
+                <span class="col">-</span>
+                <span class="col">-</span>
+                <span class="col">-</span>
+             </div>
+
+        </div>
+
+        <div class="col">
+            <div class="row score">
+               <span id="team-1-goals"></span>
+               <span>-</span>
+               <span id="team-2-goals"></span>
+            </div>
+        </div>
+
+        <div class="col">
+         <img class="profile-icon"   src="assets/chelsea.png" alt="" width="200px" height="200px" >
+         <span class="name" id="team-2-name">Chelsea </span>
+             <div class="row round-shots" id="team-2-round-shots">
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                 <span class="col">-</span>            
+             </div>
+        </div>
+  </div>
+  <div class="row">
+      <div >
+         <button id="btnShootC"></button>
+      </div>
+    </div>
+</div>
+ <script src="./app.js"></script>
 </body>
 </html>

@@ -7,27 +7,55 @@ body
 {
     background: #553D67;
     display: flex;
-    justify-content: center;
+    align-items:flex-start;
+    justify-items: center;
     height: 80vh;
 }
 
-.container
+.container1
 {
     background: white;
-    display: flex;
     flex-direction: column;
     border-radius: 20px;
-    width: 700px;
-    padding: 50px;
-    margin-top: 80px;
-    margin-bottom: 50px;
+    align-self:flex-end;
+    width: 500px;
+    height: 400px;
+    margin-left: 200px;
+    padding: 20px;
+    /* padding: 20px;
+    margin-top: 10px;
+    margin-left: 600px; */
 }
-
-.container > .row
+.container2
+{
+    background: white;
+    border-radius: 20px;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    /* padding: 20px;
+    margin-top: 400px;
+    margin-left: 0px;
+    margin-right: 5000px; */
+}
+.container3
+{
+    background: white;
+    border-radius: 20px;
+    align-self:flex-end;
+    width: 500px;
+    height: 400px;
+    /* padding: 20px;
+    margin-top: 400px;
+    margin-right: 0px;
+    margin-left:-2000px; */
+}
+.container1 > .row,.container2 > .row,.container3 > .row
 {
     width: 100%;
-    justify-content: space-evenly;
+    justify-content:  space-evenly;
 }
+
 .row
 {
     display: flex;
@@ -64,7 +92,7 @@ body
     margin: 0 5px;
 }
 
-#btnShoot
+#btnShootA,#btnShootB,#btnShootC
 {
     border: none;
     border-radius: 25px;
