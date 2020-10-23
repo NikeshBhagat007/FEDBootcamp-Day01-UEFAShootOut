@@ -10,6 +10,7 @@
 </head>
 <body>
    <div class="container1">
+       <div class="row" id="result" hidden></div>
        <div class="row">
            <div class="col">
                <img class="profile-icon" src="assets/RealMadridFC.jpg" alt="" width="200px" height="200px">
@@ -47,18 +48,18 @@
      </div>
      <div class="row">
          <div >
-            <button id="btnShootA"></button>
+            <button id="btnShootA" onclick="handleShootButtonClick()"></button>
          </div>
        </div>
  </div>
 
- <div class="container2">
+ <div class="container2" style="visibility: hidden;">
     <div class="row">
         <div class="col">
             <img class="profile-icon" src="assets/FCBayernMunich.jpg" alt="" width="200px" height="200px">
-            <span class="name" id="team-1-name">Bayern Munich </span>
+            <span class="name" id="FinalTeam-1-name">Bayern Munich </span>
 
-            <div class="row round-shots" id="team-1-round-shots" >
+            <div class="row round-shots" id="FinalTeam-1-round-shots" >
                 <span class="col">-</span>
                 <span class="col">-</span>
                 <span class="col">-</span>
@@ -70,16 +71,16 @@
 
         <div class="col">
             <div class="row score">
-               <span id="team-1-goals"></span>
+               <span id="FinalTeam-1-goals"></span>
                <span>-</span>
-               <span id="team-2-goals"></span>
+               <span id="FinalTeam-2-goals"></span>
             </div>
         </div>
 
         <div class="col">
          <img class="profile-icon"   src="assets/HescaFC.jpg" alt="" width="200px" height="200px" >
-         <span class="name" id="team-2-name">Huesca </span>
-             <div class="row round-shots" id="team-2-round-shots">
+         <span class="name" id="FinalTeam-2-name">Huesca </span>
+             <div class="row round-shots" id="FinalTeam-2-round-shots">
                  <span class="col">-</span>
                  <span class="col">-</span>
                  <span class="col">-</span>
@@ -98,9 +99,9 @@
     <div class="row">
         <div class="col">
             <img class="profile-icon" src="assets/FCBayernMunich.jpg" alt="" width="200px" height="200px">
-            <span class="name" id="team-1-name">Bayern Munich </span>
+            <span class="name" id="team-3-name">Bayern Munich </span>
 
-            <div class="row round-shots" id="team-1-round-shots" >
+            <div class="row round-shots" id="team-3-round-shots" >
                 <span class="col">-</span>
                 <span class="col">-</span>
                 <span class="col">-</span>
@@ -112,16 +113,16 @@
 
         <div class="col">
             <div class="row score">
-               <span id="team-1-goals"></span>
+               <span id="team-3-goals"></span>
                <span>-</span>
-               <span id="team-2-goals"></span>
+               <span id="team-4-goals"></span>
             </div>
         </div>
 
         <div class="col">
          <img class="profile-icon"   src="assets/chelsea.png" alt="" width="200px" height="200px" >
-         <span class="name" id="team-2-name">Chelsea </span>
-             <div class="row round-shots" id="team-2-round-shots">
+         <span class="name" id="team-4-name">Chelsea </span>
+             <div class="row round-shots" id="team-4-round-shots">
                  <span class="col">-</span>
                  <span class="col">-</span>
                  <span class="col">-</span>
