@@ -65,17 +65,21 @@ updateButtonText =()=>{
  
     button.textContent=`${turn===1?team1.name:team2.name} Shot` ;
 
-    var button =document.getElementById('btnShootC');
-    console.log(button);
-    button.textContent=`${turn===1?team3.name:team4.name} Shot` ;
+     var button2 =document.getElementById('btnShootC');
+     console.log(button2);
+     button2.textContent=`${turn===1?team3.name:team4.name} Shot` ;
 
-    
-
+    console.log(team1.goals.length);
     if(team1.goals.length== 5 && team2.goals.length == 5 )
     {
         button.remove();
-        result.textContent=team1.score===team2.score?`Match Draw`:`$team1.score>team1.score?team1.name:team2.name wins`
+        result.textContent=team1.score===team2.score?`Match Draw`:`${team1.score > team1.score ? team1.name : team2.name } wins`
     }
+    else
+    {
+        turn =turn ===1 ? 2 : 1;
+    }
+    button.textContent =`${turn%2 === 1 ? team1.name:team2.name} Shot`
     
 }
 
@@ -112,6 +116,27 @@ var handleShootButtonClick =()=>{
     updateScore();
 }
 
+var handleShootT2ButtonClick =()=>{
+
+    console.log("Checking Button click");
+    var goal=score[Math.floor(Math.random()*score.length)];
+    console.log(goal);
+    goal= goal === 0 ? 'F':goal;
+    console.log(goal);
+    if(turn==1)
+    {
+        team3.goals.push(goal);
+        team3.score =calculateScore(team3.goals);
+    }
+    else
+    {
+        team4.goals.push(goal);
+        team4.score =calculateScore(team4.goals);
+    }
+    updateButtonText();//update team name 
+    updateScore();
+}
+
 var calculateScore =(goal)=>{
     return goal.map(goal =>{
         return goal == 'F'?0:goal;
@@ -123,12 +148,11 @@ updateRuns = ()=>
     var TeamOneGoalsElement = document.getElementById("team-1-round-shots").children;
     var TeamTwoGoalsElement = document.getElementById("team-2-round-shots").children;
     team1.goals.forEach((goal,index) => {
-        TeamOneGoalsElement[index].textContent=goal;
-        
+        goal === 1 ? TeamOneGoalsElement[index].style.backgroundColor ="Green" :TeamOneGoalsElement[index].style.backgroundColor ="rgba(255,0,0,1)";
+        // TeamOneGoalsElement[index].textContent=goal;
     });
     team2.goals.forEach((goal,index) => {
-        TeamTwoGoalsElement[index].textContent=goal;
-        
+        goal === 1 ? TeamTwoGoalsElement[index].style.backgroundColor ="Green" :TeamTwoGoalsElement[index].style.backgroundColor ="rgba(255,0,0,1)";
     });
 }
 
